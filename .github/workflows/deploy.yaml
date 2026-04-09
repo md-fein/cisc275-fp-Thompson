@@ -247,6 +247,8 @@ jobs:
             - name: Setup Pages
               if: ${{ !cancelled() }}
               uses: actions/configure-pages@v5
+              with:
+                  enablement: true
 
             - name: Upload artifact (for Pages)
               if: ${{ !cancelled() }}
